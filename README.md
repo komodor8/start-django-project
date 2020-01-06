@@ -23,6 +23,10 @@ pip install psycopg2-binary
 python manage.py migrate
 ```
 
+4. Create super user to the admin dashboard
+```
+python manage.py createsuperuser
+```
 
 ## What's inside:
 + django version 3.0
