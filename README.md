@@ -5,11 +5,23 @@ fresh django app to test features with bootstrap 4, models (Author, Book), exten
 
 ## Steps
 1. Create and activate your Virtualenv
-virtualenv -p python3 envname
+```
+virtualenv -p python3 `envname`
 $ source /path/to/ENV/bin/activate
+```
 
 2. Create your project
-django-admin startproject mysite
+```
+django-admin startproject `mysite`
+```
+
+3. Install the depedencies
+```
+pip install Django
+pip install django-debug-toolbar
+pip install psycopg2-binary
+python manage.py migrate
+```
 
 
 ## What's inside:
