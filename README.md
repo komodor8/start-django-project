@@ -2,6 +2,16 @@
 
 fresh django app to test features with bootstrap 4, models (Author, Book), extends, views, urls, settings
 
+
+## Steps
+1. Create and activate your Virtualenv
+virtualenv -p python3 envname
+$ source /path/to/ENV/bin/activate
+
+2. Create your project
+django-admin startproject mysite
+
+
 ## What's inside:
 + django version 3.0
 + debug toolbar
