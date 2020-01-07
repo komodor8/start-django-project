@@ -15,7 +15,7 @@ source /path/to/ENV/bin/activate
 django-admin startproject ***mysite***
 ```
 
-3. Install the depedencies
+3. Install the depedencies to the activated environment
 ```
 pip install Django
 pip install django-debug-toolbar
@@ -37,13 +37,12 @@ python manage.py createsuperuser
 + extends templates base.html
 
 ```
-DATABASES = {
-    'default': {
+'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'faker',
-        'USER': 'farid',
-        'PASSWORD': 'farid',
-        'HOST': 'localhost',
+        'NAME': '',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'XX.XX.XXX.83',
         'PORT': '5432',
     }
 }
