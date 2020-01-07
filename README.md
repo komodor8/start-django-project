@@ -23,7 +23,7 @@ pip install psycopg2-binary
 python manage.py migrate
 ```
 
-4. Create super user to the admin dashboard
+4. Create super user for the admin dashboard
 ```
 python manage.py createsuperuser
 ```
