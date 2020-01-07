@@ -1,10 +1,10 @@
 # start-django-project
 
-fresh django app to test features with bootstrap 4, models (Author, Book), extends, views, urls, settings
+Fresh django project for fast testing with bootstrap 4, models (Author, Book), extends, views, urls, settings
 
 
 ## Steps
-1. Create and activate your Virtualenv
+1. Create and activate your virtualenv
 ```
 virtualenv -p python3 `envname`
 $ source /path/to/ENV/bin/activate
@@ -40,9 +40,9 @@ python manage.py createsuperuser
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'faker',
+        'USER': 'farid',
+        'PASSWORD': 'farid',
         'HOST': 'localhost',
         'PORT': '5432',
     }
