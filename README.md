@@ -6,13 +6,13 @@ Fresh django project for fast testing with bootstrap 4, models (Author, Book), e
 ## Steps
 1. Create and activate your virtualenv
 ```
-virtualenv -p python3 `envname`
+virtualenv -p python3 ***envname***
 $ source /path/to/ENV/bin/activate
 ```
 
 2. Create your project
 ```
-django-admin startproject `mysite`
+django-admin startproject ***mysite***
 ```
 
 3. Install the depedencies
