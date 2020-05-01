@@ -15,7 +15,18 @@ source /path/to/ENV/bin/activate
 django-admin startproject ***mysite***
 ```
 
-3. Install the depedencies to the activated environment and migrate
+3. Set database & [ Allow remote connections to PostgreSQL](http://devopspy.com/linux/allow-remote-connections-postgresql/)
+```
+Step 1 – Update postgres.conf
+Step 2. Configuring pg_hba.conf
+`$ sudo vi /etc/postgresql/9.6/main/pg_hba.conf`
+Step 3. Restart PostgreSQL Server
+`$ sudo systemctl restart postgresql`
+Step 4. Adjusting Firewall (optional)
+`$ sudo ufw allow 5432/tcp`
+```
+
+4. Install the depedencies to the activated environment and migrate
 ```
 pip install Django
 pip install django-debug-toolbar
@@ -23,7 +34,7 @@ pip install psycopg2-binary
 python manage.py migrate
 ```
 
-4. Create super user for the admin dashboard
+5. Create super user for the admin dashboard
 ```
 python manage.py createsuperuser
 ```
@@ -41,8 +52,8 @@ python manage.py createsuperuser
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'YOUR_DB_NAME',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'XX.XX.XXX.83',
+        'PASSWORD': 'secret',
+        'HOST': 'XX.XX.XXX.42',
         'PORT': '5432',
     }
 }
